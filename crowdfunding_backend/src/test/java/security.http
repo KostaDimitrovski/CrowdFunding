@@ -1,0 +1,22 @@
+### login sucess
+POST http://localhost:8081/api/login
+Content-Type: application/json
+
+{"email":"kosta1@1.com","password":"123"}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+  var jwt=response.body
+  client.global.set("jwt", response.body)
+});
+%}
+
+### manufacturers-list
+GET http://localhost:8081/api/ceos/list
+Authorization: {"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZW8xMkAyLmNvbSIsImlhdCI6MTY4ODY0MDc5MCwiZXhwIjoxNjg4NjQyMjMwfQ.jN8ttZ-kgx9WXJMAvtWijm_r7QxVzwfHv5maZ2PJ7mw"}
+
+
+###categories-list
+GET http://localhost:9091/api/categories
+Authorization: {{jwt}}

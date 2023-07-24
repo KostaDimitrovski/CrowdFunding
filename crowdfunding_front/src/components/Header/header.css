@@ -1,0 +1,72 @@
+.navbar {
+    min-height: 4px;
+    font-size: 20px;
+}
+
+.form-inline {
+    margin-left: auto; /* Remove the fixed margin value */
+
+}
+
+.navbar-nav {
+    margin-top: 1rem;
+    font-family: "Verdana", sans-serif;
+
+}
+
+.nav-item {
+    margin-right: 0.5rem;
+
+}
+
+.nav-link {
+    font-size: 45px;
+
+}
+
+.navbar-collapse {
+    overflow: auto;
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+    .navbar-nav {
+        margin-top: 0.5rem;
+        color: #5cb85c;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.navbar-brand {
+    font-size: 48px; /* Adjust the font size to your desired value */
+    padding: 0.5rem 1rem;
+    font-family: fantasy;
+
+}
+
+.link-container {
+    display: flex;
+}
+
+.link-container > * {
+    margin-right: 5px; /* Optional: Add some spacing between the two links */
+    padding-right: 20px;
+    height: 40px;
+}
+
+.header {
+    border-bottom: solid 1px #e6f6e6;
+    /*padding: 100px 0;*/
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+
+}
