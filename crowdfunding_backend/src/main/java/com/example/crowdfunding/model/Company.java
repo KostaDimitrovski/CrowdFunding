@@ -1,11 +1,8 @@
 package com.example.crowdfunding.model;
 
-
 import com.example.crowdfunding.model.enums.Category;
 import jakarta.persistence.*;
 import lombok.Data;
-
-import java.awt.*;
 
 
 @Entity

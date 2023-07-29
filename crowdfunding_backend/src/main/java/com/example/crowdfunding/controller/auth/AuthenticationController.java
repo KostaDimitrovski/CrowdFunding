@@ -14,7 +14,7 @@ import java.io.IOException;
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
-public class    AuthenticationController {
+public class AuthenticationController {
 
     private final AuthenticationService service;
 
