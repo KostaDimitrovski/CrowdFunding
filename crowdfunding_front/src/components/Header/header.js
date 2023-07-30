@@ -62,7 +62,7 @@ const Header = () => {
                         ) : (
                             <div className="link-container">
                                 <Link className="btn btn-outline-info my-2 my-sm-0" to="/login">
-                                    Loginn
+                                    Login
                                 </Link>
                                 <Link className="btn btn-outline-info my-2 my-sm-0" to="/register">
                                     Sign up
