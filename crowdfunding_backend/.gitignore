@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Include specific JAR file
+!crowdfunding_backend/target/crowdfunding-0.0.1-SNAPSHOT.jar
+
 ### STS ###
 .apt_generated
 .classpath
