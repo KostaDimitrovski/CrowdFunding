@@ -57,7 +57,7 @@ const Header = () => {
                     <form className="form-inline mt-2 mt-md-0 ml-3">
                         {authenticated ? (
                             <button className="btn btn-outline-info my-3 my-sm-0" onClick={handleLogout}>
-                                Logout
+                                Logoutt
                             </button>
                         ) : (
                             <div className="link-container">
