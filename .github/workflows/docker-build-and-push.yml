@@ -41,7 +41,7 @@ jobs:
 
       -
         name: Build and push frontend
-        run: docker build -t kostadimitrovski/frontend:latest ./crowdfunding_frontend
+        run: docker build -t kostadimitrovski/frontend:latest ./crowdfunding_front
 
       -
         name: Push frontend Docker image
