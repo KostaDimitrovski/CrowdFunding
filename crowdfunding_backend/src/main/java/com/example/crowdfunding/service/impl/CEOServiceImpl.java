@@ -38,6 +38,13 @@ public class CEOServiceImpl implements CEOService {
         ceo.setName(ceoDto.getName());
         ceo.setSurname(ceoDto.getSurname());
         ceo.setProfilePicture(ceoDto.getProfilePicture());
+        ceo.setAddress(ceoDto.getAddress());
+        ceo.setEmail(ceoDto.getEmail());
+        ceo.setPhoneNumber(ceoDto.getPhoneNumber());
+        ceo.setPosition(ceoDto.getPosition());
+        ceo.setSocialMedia(ceoDto.getSocialMedia());
+        ceo.setSkills(ceoDto.getSkills());
+        ceo.setAbout(ceoDto.getAbout());
         return ceoRepository.save(ceo);
     }
 }

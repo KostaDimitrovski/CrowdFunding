@@ -17,7 +17,7 @@ services:
     ports:
       - "3000:80"
   postgres:
-    image: postgres:15
+    image: postgres:latest
     container_name: postgres
     environment:
       - POSTGRES_DB=crowdfundingDB

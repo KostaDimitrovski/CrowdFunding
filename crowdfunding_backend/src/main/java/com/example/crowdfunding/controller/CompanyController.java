@@ -19,7 +19,7 @@ public class CompanyController {
         this.companyService = companyService;
     }
 
-    @GetMapping("/list1")
+    @GetMapping("/list")
     public List<Company> findAll() {
         return this.companyService.findAllCompanies();
     }

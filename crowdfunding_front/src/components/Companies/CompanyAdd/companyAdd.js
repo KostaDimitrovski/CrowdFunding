@@ -86,8 +86,10 @@ const CompanyAdd = (props) => {
                                 <option key={term.id} value={term.id}>
                                     {term.name}
                                 </option>
+
                             ))}
                         </select>
+
                     </div>
                     <div className="form-group">
                         <label htmlFor="aboutTheCompany">AboutTheCompany</label>
