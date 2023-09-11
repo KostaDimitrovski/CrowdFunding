@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -48,7 +49,7 @@ const Footer = () => {
                             <div className="footer_menu">
                                 <ul>
                                     <li><a href="#">Call Centre</a></li>
-                                    <li><a href="#">Email Us</a></li>
+                                    <li><Link to="/contact">Email Us</Link></li>
                                     <li><a href="#">Term &amp; Conditions</a></li>
                                     <li><a href="#">Help Center</a></li>
                                 </ul>
@@ -66,7 +67,7 @@ const Footer = () => {
                             {/*</div>*/}
                             {/* Footer Social Area */}
                             <div className="footer_social_area">
-                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i className="fa fa-facebook"></i></a>
+                                <a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i className="fa fa-facebook"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i className="fa fa-pinterest"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i className="fa fa-skype"></i></a>
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i className="fa fa-twitter"></i></a>

@@ -5,5 +5,5 @@ public enum Category {
     Manufacturing,
     FinancialServices,
     Retail,
-    Healtcare
+    Healthcare
 }

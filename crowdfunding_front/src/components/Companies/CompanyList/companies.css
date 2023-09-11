@@ -2,12 +2,15 @@
     padding-left: 295px;
     /*padding-bottom: -700px;*/
     height: 10px;
+    padding-bottom:-30px;
 
 }
 
 #kosta{
     padding-top: 90px;
     margin-left: 50px;
+    font-family: "ui-serif";
+    font-size: 20px;
 }
 
 
@@ -22,3 +25,11 @@
 
 
 }
+/*.col-md-6{*/
+/*    background-color: green;*/
+
+/*}*/
+
+/*#comp{*/
+/*    margin-bottom: 130px;*/
+/*}*/

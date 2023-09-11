@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import "./ceos.css";
+import ReactPaginate from "react-paginate";
 
 const CeoCard = ({ ceo }) => {
     return (
@@ -52,27 +53,22 @@ const CeoCard = ({ ceo }) => {
         </div>
     );
 };
-
 const Ceos = (props) => {
-    // Pagination logic (assuming 1 CEO per page for simplicity)
     const itemsPerPage = 1;
     const totalPages = Math.ceil(props.ceos.length / itemsPerPage);
 
-    const [currentPage, setCurrentPage] = React.useState(1);
+    const [currentPage, setCurrentPage] = useState(1);
     const ceosToShow = props.ceos.slice(
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
     );
 
     const handlePageChange = (page) => {
-        setCurrentPage(page);
+        setCurrentPage(page.selected + 1);
     };
 
     return (
-         <div className="ceos-container">
-         {/*    <h1 id="text" className="mb-5 mt-5">*/}
-         {/*        The CEOs*/}
-         {/*</h1>*/}
+        <div className="ceos-container">
             <div className="container">
                 <div className="row justify-content-center">
                     {ceosToShow.map((ceo, index) => (
@@ -80,23 +76,26 @@ const Ceos = (props) => {
                             <CeoCard ceo={ceo} />
                         </div>
                     ))}
-                    {totalPages > 1 && (
-                        <ul className="pagination">
-                            {Array.from({ length: totalPages }).map((_, index) => (
-                                <li
-                                    key={index}
-                                    className={`page-item ${currentPage === index + 1 ? "active" : ""}`}
-                                    onClick={() => handlePageChange(index + 1)}
-                                >
-                                    <a className="page-link">
-                                        {index + 1}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    )}
                 </div>
-
+                {totalPages > 1 && (
+                    <ReactPaginate
+                        pageCount={totalPages}
+                        pageRangeDisplayed={5}
+                        marginPagesDisplayed={2}
+                        onPageChange={handlePageChange}
+                        containerClassName="pagination justify-content-center"
+                        pageClassName="page-item"
+                        pageLinkClassName="page-link"
+                        activeClassName="active"
+                        previousClassName="page-item"
+                        nextClassName="page-item"
+                        previousLinkClassName="page-link"
+                        nextLinkClassName="page-link"
+                        breakClassName="page-item disabled"
+                        breakLinkClassName="page-link"
+                        disabledClassName="disabled"
+                    />
+                )}
             </div>
         </div>
     );
