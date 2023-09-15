@@ -13,7 +13,7 @@ jobs:
         name: Checkout code
         uses: actions/checkout@v2
         with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
+
           fetch-depth: 0
 
       -
@@ -35,7 +35,7 @@ jobs:
         name: Build and push backend
         uses: docker/build-push-action@v4
         with:
-          context: ./crowdfunding_backend  # Update the context path
+          context: ./crowdfunding_backend
           push: true
           tags: kostadimitrovski/backend:latest
 
