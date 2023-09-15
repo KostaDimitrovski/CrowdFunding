@@ -61,7 +61,7 @@ const CompanyAdd = (props) => {
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="fundingTillNow">FundingTillNow</label>
+                        <label htmlFor="fundingTillNow">FundingTillNow2</label>
                         <input type="text"
                                className="form-control"
                                id="fundingTillNow"
